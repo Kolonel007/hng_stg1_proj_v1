@@ -1,8 +1,8 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
+import 'package:hng_stg1_proj_v1/customClipperguy.dart';
 import 'package:hng_stg1_proj_v1/webview.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
           debugShowCheckedModeBanner: false,
           routes: {
-            '/webViewContainer':(context) => webViewContainer(),
+            '/webViewContainer':(context) => const webViewContainer(),
           },
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           backgroundColor: Colors.blueAccent
                                          ) ,
                                         onPressed: () {
-                                          
+                                          Navigator.of(context).pushNamed('/webViewContainer');
                                         },
                                           child: const Text(
                         'Open GitHub',
@@ -116,33 +116,5 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class customClipperguy extends CustomClipper<Path> {
 
-  //alternatively use shapemaker.web.app to make the custom shape and click on getcode to get the custom code for that shape. 
-
-@override
-Path getClip(Size size){
-  double w = size.width;
-  double h = size.height;
-
-  final path = Path();
-
-  path.lineTo(0, 200);
-  path.quadraticBezierTo(
-    w * 0.5,
-    h ,
-    w, 
-    h - 20);
-  path.lineTo(w, 0);
-  path.close();
-
-  return path;
-
-}
-
-@override
-bool shouldReclip(CustomClipper<Path> oldClipper){
-  return false;
-}
-}
 
