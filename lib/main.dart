@@ -91,11 +91,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                         style: FilledButton.styleFrom(
                                           backgroundColor: Colors.blueAccent
                                          ) ,
-                                        onPressed: () {},
-                                        
-                                          // padding: 
-                                          // // const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                                          // const EdgeInsets.all(0),
+                                        onPressed: () {
+                                          
+                                        },
                                           child: const Text(
                         'Open GitHub',
                         style: TextStyle(color: Colors.white, fontSize: 13.0),
