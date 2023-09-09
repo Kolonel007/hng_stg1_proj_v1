@@ -1,16 +1,17 @@
-# hng_stg1_proj_v1
+# Introduction: 
+This is a basic application that introduces the developer and his current role. 
 
-"A new Flutter project."
+# Features: 
+The app displays the slack profile picture and contains a link (which is displayed in a WebView) to the GitHub profile of the developer. 
 
-## Getting Started
+# Appetize link: 
+This is the appetizer link through which the application  can be simulated. The application works perfectly on Pixel 7Pro (android 13.0). 
 
-This project is a starting point for a Flutter application.
+# Installation: 
+To run this project on your machine, clone the repository on your device, then go to terminal and run “flutter pub get” to load the dependencies which will install all the necessary dependencies for the app to run. 
 
-A few resources to get you started if this is your first Flutter project:
+# Requirements: 
+This projects assumes that you have already installed flutter iOS, and android SDKs on your machine. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Packages: 
+Material Package contained a lot of basic designing tool methods including scaffold and other rudimentary tools . WebView Package was used to display webpages inside the application. It makes the regular application a web application. 

@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
               
               Positioned(
-                top: 300, 
+                top: 250, 
                 
                 child: Container(
                   decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20),
@@ -82,6 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),),
                       ),
 
+                      const Text ('Slack Display Name',style: TextStyle(fontSize: 10),),
                       const Text ('Kolade Modupe',style: TextStyle(fontSize: 20),),
                       const Text ('Mobile App Developer at HNGx',style: TextStyle(fontSize: 10),),
 
